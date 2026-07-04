@@ -9,7 +9,7 @@ const getNormalizedRole = (roleString) => {
   return roleString.replace('ROLE_', '').toUpperCase().trim();
 };
 
-const PASSWORD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$/;
+const PASSWORD_REGEX = /^.{8,}$/;
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const STYLES = {
